@@ -1,10 +1,10 @@
-{
+﻿{
   "kind": "singleType",
-  "collectionName": "globals",
+  "collectionName": "site_wwws",
   "info": {
-    "singularName": "global",
-    "pluralName": "globals",
-    "displayName": "Global",
+    "singularName": "site-www",
+    "pluralName": "site-wwws",
+    "displayName": "[WWW] Site Settings",
     "description": ""
   },
   "options": {
@@ -26,39 +26,25 @@
       "component": "shared.seo",
       "repeatable": false
     },
-    "siteName": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "defaultSeo": {
+    "navbar": {
       "type": "component",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "component": "shared.seo",
+      "component": "global.navbar",
       "repeatable": false
     },
-    "favicon": {
-      "type": "media",
+    "footer": {
+      "type": "component",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+      "component": "global.footer",
+      "repeatable": false
     }
   }
 }

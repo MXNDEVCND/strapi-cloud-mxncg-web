@@ -1,0 +1,62 @@
+﻿{
+  "kind": "collectionType",
+  "collectionName": "www-pages",
+  "info": {
+    "singularName": "www-page",
+    "pluralName": "www-pages",
+    "displayName": "[WWW] Pages",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.seo",
+      "repeatable": false
+    },
+    "slug": {
+      "type": "uid",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true,
+      "default": "slug"
+    },
+    "dynamic_zone": {
+      "type": "dynamiczone",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "components": [
+        "dynamic-zone.hero",
+        "dynamic-zone.testimonials",
+        "dynamic-zone.how-it-works",
+        "dynamic-zone.brands",
+        "dynamic-zone.pricing",
+        "dynamic-zone.launches",
+        "dynamic-zone.cta",
+        "dynamic-zone.form-next-to-section",
+        "dynamic-zone.faq",
+        "dynamic-zone.clients",
+        "dynamic-zone.collection-list",
+        "dynamic-zone.infrastructures"
+      ]
+    }
+  }
+}

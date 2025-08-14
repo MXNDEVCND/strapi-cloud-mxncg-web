@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_dynamic_zone_rich_contents",
+  "info": {
+    "displayName": "Rich Content"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "richText": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

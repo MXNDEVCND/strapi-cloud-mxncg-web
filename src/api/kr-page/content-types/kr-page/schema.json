@@ -1,0 +1,59 @@
+﻿{
+  "kind": "collectionType",
+  "collectionName": "kr-pages",
+  "info": {
+    "singularName": "kr-page",
+    "pluralName": "kr-pages",
+    "displayName": "[KR] Pages",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.seo",
+      "repeatable": false
+    },
+    "slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "uid",
+      "default": "slug",
+      "required": true
+    },
+    "dynamic_zone": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "dynamic-zone.hero",
+        "dynamic-zone.testimonials",
+        "dynamic-zone.how-it-works",
+        "dynamic-zone.brands",
+        "dynamic-zone.pricing",
+        "dynamic-zone.launches",
+        "dynamic-zone.cta",
+        "dynamic-zone.form-next-to-section",
+        "dynamic-zone.faq"
+      ]
+    }
+  }
+}

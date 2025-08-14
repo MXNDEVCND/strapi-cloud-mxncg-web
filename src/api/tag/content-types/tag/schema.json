@@ -1,10 +1,10 @@
 {
-  "kind": "singleType",
-  "collectionName": "globals",
+  "kind": "collectionType",
+  "collectionName": "tags",
   "info": {
-    "singularName": "global",
-    "pluralName": "globals",
-    "displayName": "Global",
+    "singularName": "tag",
+    "pluralName": "tags",
+    "displayName": "Tags",
     "description": ""
   },
   "options": {
@@ -26,7 +26,7 @@
       "component": "shared.seo",
       "repeatable": false
     },
-    "siteName": {
+    "title": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -34,17 +34,30 @@
         }
       }
     },
-    "defaultSeo": {
-      "type": "component",
+    "description": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "slug": {
+      "type": "uid",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "component": "shared.seo",
-      "repeatable": false
+      "targetField": "title"
     },
-    "favicon": {
+    "articles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::article.article",
+      "mappedBy": "tags"
+    },
+    "image": {
       "type": "media",
       "pluginOptions": {
         "i18n": {
@@ -62,3 +75,4 @@
     }
   }
 }
+

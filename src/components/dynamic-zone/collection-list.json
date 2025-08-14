@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_dynamic_zone_collection_lists",
+  "info": {
+    "displayName": "Collection_List"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "sub_heading": {
+      "type": "text"
+    },
+    "items_per_page": {
+      "type": "integer"
+    },
+    "api_id": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

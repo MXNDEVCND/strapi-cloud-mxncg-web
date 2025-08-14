@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_dynamic_zone_event_infos",
+  "info": {
+    "displayName": "EventInfo"
+  },
+  "options": {},
+  "attributes": {
+    "start": {
+      "type": "date"
+    },
+    "end": {
+      "type": "date"
+    },
+    "location": {
+      "type": "string"
+    },
+    "area": {
+      "type": "string"
+    },
+    "unit": {
+      "type": "enumeration",
+      "enum": [
+        "m²",
+        "ft²"
+      ]
+    }
+  },
+  "config": {}
+}

@@ -1,10 +1,10 @@
-{
-  "kind": "singleType",
-  "collectionName": "globals",
+﻿{
+  "kind": "collectionType",
+  "collectionName": "techs",
   "info": {
-    "singularName": "global",
-    "pluralName": "globals",
-    "displayName": "Global",
+    "singularName": "tech",
+    "pluralName": "techs",
+    "displayName": "tech",
     "description": ""
   },
   "options": {
@@ -26,7 +26,7 @@
       "component": "shared.seo",
       "repeatable": false
     },
-    "siteName": {
+    "title": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -34,17 +34,24 @@
         }
       }
     },
-    "defaultSeo": {
-      "type": "component",
+    "description": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "slug": {
+      "type": "uid",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "component": "shared.seo",
-      "repeatable": false
+      "targetField": "title"
     },
-    "favicon": {
+    "image": {
       "type": "media",
       "pluginOptions": {
         "i18n": {

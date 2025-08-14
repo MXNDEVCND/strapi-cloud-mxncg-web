@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_dynamic_zone_galleries",
+  "info": {
+    "displayName": "Gallery",
+    "icon": "landscape"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "media": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    }
+  },
+  "config": {}
+}

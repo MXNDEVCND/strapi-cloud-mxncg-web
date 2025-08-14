@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_dynamic_zone_clients",
+  "info": {
+    "displayName": "Clients",
+    "icon": "user",
+    "description": "클라이언트 정보를 표시하는 컴포넌트"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "sub_heading": {
+      "type": "string"
+    },
+    "clients": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::client.client"
+    }
+  }
+} 
