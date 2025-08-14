@@ -40,6 +40,18 @@ Strapi gives you many possible deployment options for your project including [St
 yarn strapi deploy
 ```
 
+### Strapi Cloud 배포 시 권한 설정
+
+Strapi Cloud에 배포한 후, 새로 추가한 API 타입들에 대한 권한을 설정하려면 다음 명령어를 실행하세요:
+
+```bash
+npm run setup:permissions
+```
+
+또는 Strapi Cloud 대시보드에서 직접 권한을 설정할 수 있습니다:
+1. Settings > Users & Permissions > Roles > Public
+2. 새로 추가한 API 타입들에 대해 `find`와 `findOne` 권한을 활성화
+
 ## 📚 Learn more
 
 - [Resource center](https://strapi.io/resource-center) - Strapi resource center.
