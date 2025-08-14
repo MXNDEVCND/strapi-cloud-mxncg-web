@@ -42,15 +42,35 @@ yarn strapi deploy
 
 ### Strapi Cloud 배포 시 권한 설정
 
-Strapi Cloud에 배포한 후, 새로 추가한 API 타입들에 대한 권한을 설정하려면 다음 명령어를 실행하세요:
+Strapi Cloud에 배포한 후, 새로 추가한 API 타입들에 대한 권한을 설정하는 방법들:
+
+#### 방법 1: Strapi Cloud CLI 사용 (권장)
+
+```bash
+# Strapi Cloud CLI 설치
+npm install -g @strapi/cloud-cli
+
+# 로그인
+strapi cloud login
+
+# 프로젝트 연결
+strapi cloud link
+
+# 스크립트 실행
+strapi cloud run npm run setup:permissions
+```
+
+#### 방법 2: Strapi Cloud 대시보드에서 직접 설정
+
+1. Strapi Cloud 대시보드 접속
+2. Settings > Users & Permissions > Roles > Public
+3. 새로 추가한 API 타입들에 대해 `find`와 `findOne` 권한을 활성화
+
+#### 방법 3: 로컬에서 스크립트 실행
 
 ```bash
 npm run setup:permissions
 ```
-
-또는 Strapi Cloud 대시보드에서 직접 권한을 설정할 수 있습니다:
-1. Settings > Users & Permissions > Roles > Public
-2. 새로 추가한 API 타입들에 대해 `find`와 `findOne` 권한을 활성화
 
 ## 📚 Learn more
 

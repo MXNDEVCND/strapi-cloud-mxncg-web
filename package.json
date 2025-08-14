@@ -13,6 +13,11 @@
     "start": "strapi start",
     "strapi": "strapi"
   },
+  "strapi": {
+    "hooks": {
+      "post-deploy": "npm run post-deploy"
+    }
+  },
   "dependencies": {
     "@strapi/plugin-cloud": "5.22.0",
     "@strapi/plugin-users-permissions": "5.22.0",
